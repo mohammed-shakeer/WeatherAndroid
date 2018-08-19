@@ -13,13 +13,10 @@ import java.util.List;
 
 public class Weather {
 
-    public List<Item> getItems() {
-        return items;
-    }
-
     @SerializedName("list")
     @Expose
     private List<Item> items = null;
 
+    public List<Item> getItems() { return items; }
 
 }

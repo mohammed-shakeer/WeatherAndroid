@@ -28,19 +28,10 @@ public class Item {
     @Expose
     private List<Description> description;
 
-    public String getDate() {
-        return date;
-    }
-
-    public Main getMain() {
-        return main;
-    }
-
+    public String getDate() { return date; }
+    public Main getMain() { return main; }
     public Wind getWind() {
         return wind;
     }
-
-    public List<Description> getDescription() {
-        return description;
-    }
+    public List<Description> getDescription() { return description; }
 }

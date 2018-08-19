@@ -17,11 +17,6 @@ public class Wind {
     @Expose
     private String deg;
 
-    public String getSpeed() {
-        return "Speed:  " + speed;
-    }
-
-    public String getDegree() {
-        return "Degree:  " + deg;
-    }
+    public String getSpeed() { return "Speed:  " + speed; }
+    public String getDegree() { return "Degree:  " + deg; }
 }

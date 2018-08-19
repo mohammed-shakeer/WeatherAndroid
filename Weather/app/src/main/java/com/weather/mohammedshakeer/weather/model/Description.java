@@ -9,12 +9,9 @@ import com.google.gson.annotations.SerializedName;
 
 public class Description {
 
-    public String getDescription() {
-        return description;
-    }
-
     @SerializedName("description")
     @Expose
     private String description;
 
+    public String getDescription() { return description; }
 }

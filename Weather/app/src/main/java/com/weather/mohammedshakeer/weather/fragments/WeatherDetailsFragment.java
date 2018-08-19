@@ -25,20 +25,6 @@ public class WeatherDetailsFragment extends android.support.v4.app.Fragment {
         View view = inflater.inflate(R.layout.weather_details,
                 container, false);
 
-
-//        android:id="@+id/textViewTemp"
-//        android:id="@+id/textViewDate"
-//        android:id="@+id/textViewDesc"
-//        android:id="@+id/textViewTempRange"
-//        android:id="@+id/textViewHumidity"
-//        android:id="@+id/textViewPressure"
-//        android:id="@+id/textViewDefault"
-//        android:id="@+id/textViewSeaLevel"
-//        android:id="@+id/textViewGroundLevel"
-//        android:id="@+id/textViewWind"
-//        android:id="@+id/textViewSpeed"
-//        android:id="@+id/textViewDegree"
-
         ((TextView)view.findViewById(R.id.textViewTemp)).setText(item.getMain().getTemp());
         ((TextView)view.findViewById(R.id.textViewDate)).setText(item.getDate());
         ((TextView)view.findViewById(R.id.textViewDesc)).setText(item.getDescription().get(0).getDescription());
