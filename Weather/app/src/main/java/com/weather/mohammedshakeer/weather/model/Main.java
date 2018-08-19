@@ -41,7 +41,10 @@ public class Main {
     @Expose
     private String temp_kf;
 
-    public String getTemp() { return "Temperature: " + temp + "º"; }
+    public String getTemp() { return temp; }
+    public String getMinTemp() { return temp_min; }
+    public String getMaxTemp() { return temp_max; }
+
     public String getTemp_range() { return "Max: " + temp_max + "º, Min: " + temp_min + "º"; }
     public String getHumidity() { return "Humidity " + humidity + "%"; }
     public String getPressure() {

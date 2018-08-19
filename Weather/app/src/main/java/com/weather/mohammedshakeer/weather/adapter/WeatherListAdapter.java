@@ -7,10 +7,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.weather.mohammedshakeer.weather.MainActivity;
 import com.weather.mohammedshakeer.weather.R;
 import com.weather.mohammedshakeer.weather.fragments.WeatherListFragment;
 import com.weather.mohammedshakeer.weather.model.Item;
+import com.weather.mohammedshakeer.weather.utils.Utils;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,10 +24,11 @@ import java.util.List;
 public class WeatherListAdapter extends RecyclerView.Adapter<WeatherListAdapter.ViewHolder> {
 
     private List<Item> mItems;
-    PostItemListener mItemListener;
+    private PostItemListener mItemListener;
+    private WeatherListFragment weatherListFragment;
 
-    public WeatherListAdapter(Context weatherListFragment, List<Item> items, PostItemListener postItemListener) {
-
+    public WeatherListAdapter(WeatherListFragment weatherListFragment, List<Item> items, PostItemListener postItemListener) {
+        this.weatherListFragment = weatherListFragment;
         mItemListener = postItemListener;
         mItems = items;
     }
@@ -74,14 +78,15 @@ public class WeatherListAdapter extends RecyclerView.Adapter<WeatherListAdapter.
         return viewHolder;
     }
 
+
     @Override
     public void onBindViewHolder(WeatherListAdapter.ViewHolder holder, int position) {
 
         Item item = mItems.get(position);
         holder.textViewDate.setText(item.getDate());
         holder.textViewDesc.setText(item.getDescription().get(0).getDescription());
-        holder.textViewTemp.setText(item.getMain().getTemp());
-        holder.textViewTempRange.setText(item.getMain().getTemp_range());
+        holder.textViewTemp.setText(Utils.tempValue(item.getMain().getTemp(), ((MainActivity)weatherListFragment.getActivity()).isCelsius));
+        holder.textViewTempRange.setText(Utils.tempRangeValue(item.getMain().getMinTemp(), item.getMain().getMaxTemp(), ((MainActivity)weatherListFragment.getActivity()).isCelsius));
         holder.textViewHumidity.setText(item.getMain().getHumidity());
     }
 

@@ -17,75 +17,101 @@
             android:id="@+id/textViewTemp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
             android:text="Temp" />
 
         <TextView
             android:id="@+id/textViewDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:textColor="#00C8DC"
             android:text="Date" />
 
         <TextView
             android:id="@+id/textViewDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
             android:text="Desc" />
-
 
         <TextView
             android:id="@+id/textViewTempRange"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
             android:text="TextView" />
 
         <TextView
             android:id="@+id/textViewHumidity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="20dp"
             android:text="TextView" />
 
         <TextView
             android:id="@+id/textViewPressure"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pressure" />
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:text="Pressure:" />
 
         <TextView
             android:id="@+id/textViewDefault"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
             android:text="TextView" />
 
         <TextView
             android:id="@+id/textViewSeaLevel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
             android:text="TextView" />
 
         <TextView
             android:id="@+id/textViewGroundLevel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="20dp"
             android:text="TextView" />
 
         <TextView
             android:id="@+id/textViewWind"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Wind" />
-
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:text="Wind:" />
 
         <TextView
             android:id="@+id/textViewSpeed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
             android:text="Speed" />
-
 
         <TextView
             android:id="@+id/textViewDegree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
             android:text="TextView" />
         </LinearLayout>
     </ScrollView>

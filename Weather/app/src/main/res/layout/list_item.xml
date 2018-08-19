@@ -9,29 +9,43 @@
         android:id="@+id/textViewDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#00C8DC"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
         android:text="Date" />
 
     <TextView
         android:id="@+id/textViewDesc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
         android:text="Desc" />
 
     <TextView
         android:id="@+id/textViewTemp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
         android:text="Temp" />
 
     <TextView
         android:id="@+id/textViewTempRange"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
         android:text="TempRange" />
 
     <TextView
         android:id="@+id/textViewHumidity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
         android:text="Humidity" />
 </LinearLayout>
